@@ -44,9 +44,8 @@ Make sure you have the following installed:
    ```bash
    npm install
    ```
-3. Create a `.env` file in the project root and configure the keys at the `.env.examples`:
+3. Create a `.env` file in the project root and configure the keys at the `.env.examples` file:
    ```
-   PORT=6000
    DATABASE_HOST=localhost
    DATABASE_PORT=3306
    DATABASE_USER=root
@@ -55,13 +54,18 @@ Make sure you have the following installed:
    JWT_SECRET=your_jwt_secret
    PORT=3000
    ```
-4. Run database migrations:
+4. Create database with the same of **DATABASE_NAME** on the `.env` file
+5. Run database migrations:
    ```bash
-   npm run typeorm migration:run
+   npm run migrate
    ```
-5. Start the application:
+6. Start the application:
    ```bash
    npm run start:dev
+   ```
+7. Run tests :
+   ```bash
+   npm test
    ```
 
 ---
