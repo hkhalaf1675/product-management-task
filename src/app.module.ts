@@ -7,6 +7,7 @@ import { dataSourceOptions } from './database/data-source';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { JwtModule } from '@nestjs/jwt';
 import { UsersModule } from './modules/users/users.module';
+import { ProductsModule } from './modules/products/products.module';
 
 @Module({
   imports: [
@@ -26,7 +27,8 @@ import { UsersModule } from './modules/users/users.module';
       },
       global: true
     }),
-    UsersModule
+    UsersModule,
+    ProductsModule
   ],
   controllers: [AppController],
   providers: [AppService],
