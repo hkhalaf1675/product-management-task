@@ -8,7 +8,7 @@
   "generateOptions": {
     "spec": {
       "service": true,
-      "controller": true
+      "controller": false
     }
   }
 }
